@@ -1,0 +1,97 @@
+@import url('https://fonts.maateen.me/kalpurush/font.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    color: #00F493;
+    font-family: 'Kalpurush';
+    text-align: center;
+}
+
+html{
+    background-color: #131313;
+}
+
+/* #Primary
+================================================== */
+
+
+::selection {
+	color: #131313 ;
+	background-color: #00F493;
+}
+::-moz-selection {
+	color: #131313 ;
+	background-color: #00F493;
+}
+body{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    margin: auto;
+    padding: 40px 20px;
+    border: 0px solid #00F493;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    width: 450px;
+    min-height: auto;
+}
+
+.form .title{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 0;
+}
+.form .title span{
+    font-size: clamp(30px, 10vw, 36px);
+    font-weight: 550;
+}
+.form .ques{
+    color: #fff;
+    font-size: clamp(20px, 10vw, 25px);
+    font-weight: 550;
+}
+
+.form .topimg{
+    height: 150px;
+    width: auto;
+    background-image: url('../svg/rescue presents.svg');
+}
+.form .cimg{
+    height: 120px;
+    width: auto;
+    transition: 0.1s;
+}
+.fit{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.btn{
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid #00F493;
+    color: #00F493;
+    font-size: clamp(20px, 10vw, 25px);
+    margin: 20px 4px 4px 4px;
+    padding: 4px 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.btn-long{
+    width: 40%;
+    transition: 0.1s;
+}
+
+.btn:hover{
+    background-color: #00F493;
+    color: #1a1a1a;
+}
+
+.form .ques{
+    margin-top: 20px;
+}
