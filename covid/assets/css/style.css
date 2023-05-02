@@ -1,15 +1,24 @@
-@import url('https://fonts.maateen.me/kalpurush/font.css');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
     color: #00F493;
-    font-family: 'Kalpurush';
     text-align: center;
 }
 
-html{
+*[lang="bn"] {
+    font-family: 'Tiro Bangla', serif;
+}
+
+*[lang="en"] {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
     background-color: #131313;
 }
 
@@ -18,20 +27,23 @@ html{
 
 
 ::selection {
-	color: #131313 ;
-	background-color: #00F493;
+    color: #131313;
+    background-color: #00F493;
 }
+
 ::-moz-selection {
-	color: #131313 ;
-	background-color: #00F493;
+    color: #131313;
+    background-color: #00F493;
 }
-body{
+
+body {
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.form{
+
+.form {
     margin: auto;
     padding: 40px 20px;
     border: 0px solid #00F493;
@@ -41,37 +53,64 @@ body{
     min-height: auto;
 }
 
-.form .title{
+.form .title {
     color: #fff;
     font-size: 18px;
     font-weight: 0;
 }
-.form .title span{
+
+.form .title span {
     font-size: clamp(30px, 10vw, 36px);
     font-weight: 550;
 }
-.form .ques{
+
+.form .ques {
     color: #fff;
-    font-size: clamp(20px, 10vw, 25px);
-    font-weight: 550;
+    font-size: clamp(15px, 10vw, 23px);
+    font-weight: 450;
 }
 
-.form .topimg{
+.form .ques span {
+    font-weight: 700;
+}
+
+.form .ques .mild {
+    color: #00F493;
+}
+
+.form .ques .moderate {
+    color: #f4e400;
+}
+
+.form .ques .severe {
+    color: #f40800;
+}
+
+.form .topimg {
     height: 150px;
     width: auto;
     background-image: url('../svg/rescue presents.svg');
 }
-.form .cimg{
+
+.form .cimg {
     height: 120px;
     width: auto;
     transition: 0.1s;
 }
-.fit{
+
+i {
+    font-size: clamp(15px, 10vw, 18px);
+    transform: scale(1.2);
+    transition: 0.1s;
+}
+
+.fit {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
-.btn{
+
+.btn {
     background-color: transparent;
     border-radius: 10px;
     border: 2px solid #00F493;
@@ -81,17 +120,49 @@ body{
     padding: 4px 10px;
     cursor: pointer;
     transition: 0.4s;
+    line-height: 40px;
 }
-.btn-long{
+
+.btn-long {
     width: 40%;
     transition: 0.1s;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #00F493;
     color: #1a1a1a;
 }
 
-.form .ques{
+.btn:hover i {
+    color: #1a1a1a;
+    transition: 0.1s;
+}
+
+.form .ques {
     margin-top: 20px;
+}
+
+.language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background: #252525;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.language a {
+    text-decoration: none;
+    color: #fff;
+    font-size: clamp(12px, 10vw, 18px);
+    padding: 5px 10px;
+    font-weight: 500;
+}
+
+.language .active {
+    background-color: #00F493;
+    color: #1a1a1a;
 }
