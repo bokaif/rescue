@@ -1,3 +1,3 @@
-# Covid Self-Assessment [Incomplete]
+# Covid Self-Assessment
 
-Lost the completed project file. Will redo the rest of the project later.
+A Covid Self-Assessment tool to help you assess your Covid-19 symptoms and determine your risk level, available in both English and Bengali.
